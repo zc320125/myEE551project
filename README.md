@@ -22,7 +22,7 @@ EA=1/(1+10^(RA-RB)/400)
 
 RA(new)=RA(old)+K(SA-RA(old))
 
-4) The K value will also be adjusted according to the different grades of SA.
+4） The K value will also be adjusted according to the different grades of SA.
 
 ·   ≥2400\ge2400≥2400，K=16
 
