@@ -2,7 +2,7 @@ Analysis of NBA Game Using Python
 
 Purposals:
 
-As a NBA fan, I like to watch NBA games and predict the result of every game. Therefore, this project will use the previous statistics of NBA games to judge the combat effectiveness of each team and predict the results of a game. Based on the NBA regular season and playoff statistics from 2017 to 2018, I will forecast the results of each game currently under way in 2018-2019.
+As a NBA fan, I like to watch NBA games and predict the result of every game. Therefore, this project will use the previous statistics of NBA games to judge the combat effectiveness of each team and predict the results of a game. Based on the NBA regular season and playoff statistics from 2017 to 2018, I will forecast the results of each game currently under way in 2018-2019.The accuracy is around 60%. So I still have some work to improve it.
 
 Rules:
 
@@ -18,14 +18,16 @@ Rules:
 
 EA=1/(1+10^(RA-RB)/400)
 
-3） If team A's real score SA(winning 1 point, drawing 0.5 points, losing 0 points) is different from his expectation of winning rate, then his grade score should be adjusted according to the following formula:
+  If team A's real score SA(winning 1 point, drawing 0.5 points, losing 0 points) is different from his expectation of winning rate, then his grade score should be adjusted according to the following formula:
 
 RA(new)=RA(old)+K(SA-RA(old))
 
-4） The K value will also be adjusted according to the different grades of SA.
+ The K value will also be adjusted according to the different grades of SA.
 
 ·   ≥2400，K=16
 
 ·   2100~2400 ，K=24
 
 ·   ≤2100，K=32
+
+(3)use LogisticRegression and characteristic value to analyze data and generate the probability
